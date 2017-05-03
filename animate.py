@@ -3,7 +3,7 @@ import networkx as nx
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-
+from networkx.drawing.nx_agraph import graphviz_layout
 def avg_bandwidth(peers):
     bws = []
     for peer in peers:
@@ -50,7 +50,7 @@ class Visualizer(object):
         for peer in self.peers:
             for other, cnx in peer.connections.items():
                 G.add_edge(peer, other, weight=cnx.bandwidth)
-        pos = nx.graphviz_layout(G)
+        pos = graphviz_layout(G)
         #pos = nx.spring_layout(G)
         plt.cla()
 
