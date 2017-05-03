@@ -1,7 +1,9 @@
 Simulation of a p2p network using [simpy](https://simpy.readthedocs.org/en/latest/)
+
 Prerequisite
 ======================
 Microsoft Visual C++ 9.0 is required. Get it from [here](http://aka.ms/vcpython27)
+
 graphviz from [here](http://www.graphviz.org/Download..php)
 
 ``Python
